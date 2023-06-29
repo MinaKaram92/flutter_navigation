@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:go_router/go_router.dart';
 import 'package:routes_flutter/navigation/routes.dart';
 import 'package:routes_flutter/pages/first_page.dart';
 
@@ -22,13 +23,14 @@ class HomePage extends StatelessWidget {
               onPressed: () {
                 /* Navigator.of(context)
                     .push(MaterialPageRoute(builder: (_) => FirstPage())); */
-                Navigator.of(context).pushNamed(
+                /* Navigator.of(context).pushNamed(
                   Routes.firstPage,
                   arguments: {
                     'text1': 'this text 1 from home page',
                     'text2': 'this text 2 from home page',
                   },
-                );
+                ); */
+                GoRouter.of(context).pushNamed(Routes.firstPage);
               },
               child: Text('go to first page'),
             ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:go_router/go_router.dart';
 import 'package:routes_flutter/navigation/routes.dart';
 import 'package:routes_flutter/pages/second_page.dart';
 
@@ -23,7 +24,8 @@ class FirstPage extends StatelessWidget {
               onPressed: () {
                 /* Navigator.of(context)
                     .push(MaterialPageRoute(builder: (_) => SecondPage())); */
-                Navigator.of(context).pushNamed(Routes.secondPage);
+                //Navigator.of(context).pushNamed(Routes.secondPage);
+                GoRouter.of(context).pushNamed(Routes.secondPage);
               },
               child: Text('go to second page'),
             ),
