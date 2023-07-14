@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
                     'text2': 'this text 2 from home page',
                   },
                 ); */
-                GoRouter.of(context).pushNamed(Routes.firstPage);
+                GoRouter.of(context).push(Routes.firstPage);
               },
               child: Text('go to first page'),
             ),

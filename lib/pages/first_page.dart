@@ -25,7 +25,7 @@ class FirstPage extends StatelessWidget {
                 /* Navigator.of(context)
                     .push(MaterialPageRoute(builder: (_) => SecondPage())); */
                 //Navigator.of(context).pushNamed(Routes.secondPage);
-                GoRouter.of(context).pushNamed(Routes.secondPage);
+                GoRouter.of(context).push(Routes.secondPage);
               },
               child: Text('go to second page'),
             ),

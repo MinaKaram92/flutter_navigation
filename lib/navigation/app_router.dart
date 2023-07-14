@@ -19,12 +19,9 @@ class AppRouter {
     }
   } */
 
-  static GoRouter generateRoute() {
-    return GoRouter(routes: [
-      GoRoute(path: Routes.homepage, builder: (context, state) => HomePage()),
-      GoRoute(path: Routes.firstPage, builder: (context, state) => FirstPage()),
-      GoRoute(
-          path: Routes.secondPage, builder: (context, state) => SecondPage()),
-    ]);
-  }
+  static final generateRoute = GoRouter(routes: [
+    GoRoute(path: Routes.homepage, builder: (context, state) => HomePage()),
+    GoRoute(path: Routes.firstPage, builder: (context, state) => FirstPage()),
+    GoRoute(path: Routes.secondPage, builder: (context, state) => SecondPage()),
+  ]);
 }
